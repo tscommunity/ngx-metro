@@ -1,10 +1,10 @@
 {
   "name": "ngx-metro",
   "description": "Angular components for Metro4 UI library in modern ui style.",
-  "version": "1.14.0",
+  "version": "1.15.0",
   "peerDependencies": {
-    "@angular/common": "^14.3.0",
-    "@angular/core": "^14.3.0",
+    "@angular/common": "^15.2.9",
+    "@angular/core": "^15.2.9",
     "moment": "^2.24.0",
     "metro4": "4.3.7",
     "rxjs": "~6.5.4"

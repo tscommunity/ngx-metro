@@ -53,20 +53,3 @@ Check out the [Documentation](https://tscommunity.github.io/ngx-metro/#/)
 
 [tscommunity](https://github.com/tscommunity)
 
-## Compilation
-
-If compilation encounters error `Error: error:0308010C:digital envelope routines::unsupported`, try with the following solution:
-
-> On Unix-like (Linux, macOS, Git bash, etc.):
-
-`export NODE_OPTIONS=--openssl-legacy-provider`
-
-> On Windows command prompt:
-
-`set NODE_OPTIONS=--openssl-legacy-provider`
-
-> On PowerShell:
-
-`$env:NODE_OPTIONS = "--openssl-legacy-provider"`
-
-For more detail check out [Enable legacy OpenSSL provider](https://stackoverflow.com/a/69699772/1299702).
