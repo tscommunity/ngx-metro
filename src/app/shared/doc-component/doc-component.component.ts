@@ -26,7 +26,7 @@ import {
   easingDictionary,
   fileReadModeDictionary,
   gravatarDictionary,
-  iconDictionary, inputDictionary, NgMetro4Module,
+  iconDictionary, inputDictionary, NgxMetroModule,
   popoverTriggerDictionary,
   positionBaseDictionary,
   positionDictionary,
@@ -38,7 +38,7 @@ import {
   spinnerButtonPositionDictionary,
   thinDictionary,
   widePointDictionary
-} from 'ng-metro4';
+} from 'ngx-metro';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @Component({
@@ -156,7 +156,7 @@ export class DocComponentComponent implements OnInit, OnChanges {
     class RuntimeComponentModule { }
 
     const decoratedModule = NgModule({
-      imports: [CommonModule, NgMetro4Module, FormsModule, ReactiveFormsModule],
+      imports: [CommonModule, NgxMetroModule, FormsModule, ReactiveFormsModule],
       declarations: [decoratedComponent]
     })(RuntimeComponentModule);
 

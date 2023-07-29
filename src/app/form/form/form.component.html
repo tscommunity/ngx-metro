@@ -34,7 +34,7 @@
     public formGroup: FormGroup;\n\n
 
     constructor() {\n
-      \tthis.formGroup = new M4FormGroup('reactive_demo', {\n
+      \tthis.formGroup = new MetroFormGroup('reactive_demo', {\n
       \t\temail: new FormControl('', [Validators.required, Validators.email, Validators.minLength(3)]),\n
       \t\tpassword: new FormControl('', [Validators.required]),\n
       \t\tnumber: new FormControl(10, [Validators.min(5), Validators.max(30)]),\n

@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import {ToastService} from 'ng-metro4';
+import { ToastService } from 'ngx-metro';
 
 @Component({
   selector: 'app-toast',

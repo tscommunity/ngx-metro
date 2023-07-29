@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "metro4-demo": {
+    "ngx-metro-demo": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "aot": true,
-            "outputPath": "dist/metro4-demo",
+            "outputPath": "dist/ngx-metro-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,8 +31,7 @@
             "styles": [
               "src/styles.less"
             ],
-            "scripts": [
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -70,18 +69,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "metro4-demo:build"
+            "browserTarget": "ngx-metro-demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "metro4-demo:build:production"
+              "browserTarget": "ngx-metro-demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "metro4-demo:build"
+            "browserTarget": "ngx-metro-demo:build"
           }
         },
         "test": {
@@ -117,12 +116,12 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "/ng-metro4/"
+            "baseHref": "/ngx-metro/"
           }
         }
       }
     },
-    "metro4-demo-e2e": {
+    "ngx-metro-demo-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -131,11 +130,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "metro4-demo:serve"
+            "devServerTarget": "ngx-metro-demo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "metro4-demo:serve:production"
+              "devServerTarget": "ngx-metro-demo:serve:production"
             }
           }
         },
@@ -150,38 +149,38 @@
         }
       }
     },
-    "ng-metro4": {
-      "root": "projects/ng-metro4",
-      "sourceRoot": "projects/ng-metro4/src",
+    "ngx-metro": {
+      "root": "projects/ngx-metro",
+      "sourceRoot": "projects/ngx-metro/src",
       "projectType": "library",
       "prefix": "m4",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ng-metro4/tsconfig.lib.json",
-            "project": "projects/ng-metro4/ng-package.json"
+            "tsConfig": "projects/ngx-metro/tsconfig.lib.json",
+            "project": "projects/ngx-metro/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ng-metro4/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-metro/tsconfig.lib.prod.json"
             }
           }
-},
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ng-metro4/src/test.ts",
-            "tsConfig": "projects/ng-metro4/tsconfig.spec.json",
-            "karmaConfig": "projects/ng-metro4/karma.conf.js"
+            "main": "projects/ngx-metro/src/test.ts",
+            "tsConfig": "projects/ngx-metro/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-metro/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ng-metro4/tsconfig.lib.json",
-              "projects/ng-metro4/tsconfig.spec.json"
+              "projects/ngx-metro/tsconfig.lib.json",
+              "projects/ngx-metro/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -191,5 +190,8 @@
       }
     }
   },
-  "defaultProject": "metro4-demo"
+  "defaultProject": "ngx-metro-demo",
+  "cli": {
+    "analytics": false
+  }
 }

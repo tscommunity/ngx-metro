@@ -12,10 +12,10 @@
   <div lang>
     <![CDATA[
     \f:(ts)
-    public formControl: M4FormControl<InputComponent>;\n\n
+    public formControl: MetroFormControl<InputComponent>;\n\n
 
     constructor() {\n
-      \tthis.formControl = new M4FormControl(InputComponent);\n
+      \tthis.formControl = new MetroFormControl(InputComponent);\n
     }
     ]]>
   </div>
@@ -52,10 +52,10 @@
   <div lang>
     <![CDATA[
     \f:(ts)
-    public formControl: M4FormControl<InputComponent>;\n\n
+    public formControl: MetroFormControl<InputComponent>;\n\n
 
     constructor() {\n
-      \tthis.formControl = new M4FormControl(InputComponent, 'This is the value');\n
+      \tthis.formControl = new MetroFormControl(InputComponent, 'This is the value');\n
     }
     ]]>
   </div>
@@ -68,10 +68,10 @@
   <div lang>
     <![CDATA[
     \f:(ts)
-    public formControl: M4FormControl<InputComponent>;\n\n
+    public formControl: MetroFormControl<InputComponent>;\n\n
 
     constructor() {\n
-      \tthis.formControl = new M4FormControl(InputComponent, null, [ Validators.required ], [ /* Async validators */ ]);\n
+      \tthis.formControl = new MetroFormControl(InputComponent, null, [ Validators.required ], [ /* Async validators */ ]);\n
     }
     ]]>
   </div>
@@ -85,10 +85,10 @@
   <div lang>
     <![CDATA[
     \f:(ts)
-    public formControl: M4FormControl<InputComponent>;\n\n
+    public formControl: MetroFormControl<InputComponent>;\n\n
 
     constructor() {\n
-      \tthis.formControl = new M4FormControl(InputComponent, null, null, null,\n
+      \tthis.formControl = new MetroFormControl(InputComponent, null, null, null,\n
         \t\t{ prepend: 'Prepend', append: 'Append' });\n
     }
     ]]>
@@ -103,10 +103,10 @@
   <div lang>
     <![CDATA[
     \f:(ts)
-    public formControl: M4FormControl<InputComponent>;\n\n
+    public formControl: MetroFormControl<InputComponent>;\n\n
 
     constructor() {\n
-      \tthis.formControl = new M4FormControl(InputComponent, null, [ Validators.required ], null, null,\n
+      \tthis.formControl = new MetroFormControl(InputComponent, null, [ Validators.required ], null, null,\n
         \t\t{ createError: (error: string) => 'Something missing?' });\n
     }
     ]]>

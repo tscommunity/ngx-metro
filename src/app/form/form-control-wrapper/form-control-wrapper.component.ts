@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {M4FormGroup} from 'ng-metro4';
+import { MetroFormGroup } from 'ngx-metro';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
@@ -11,7 +11,7 @@ export class FormControlWrapperComponent implements OnInit {
   public formGroup: FormGroup;
 
   constructor() {
-    this.formGroup = new M4FormGroup('form_control_wrapper', {
+    this.formGroup = new MetroFormGroup('form_control_wrapper', {
       password: new FormControl('', [Validators.required])
     });
   }

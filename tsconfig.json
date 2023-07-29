@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "ng-metro4": [
-        "dist/ng-metro4"
+      "ngx-metro": [
+        "dist/ngx-metro"
       ],
-      "ng-metro4/*": [
-        "dist/ng-metro4/*"
+      "ngx-metro/*": [
+        "dist/ngx-metro/*"
       ]
     }
   }

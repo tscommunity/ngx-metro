@@ -26,7 +26,7 @@ export class StartComponent implements OnInit {
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgMetro4Module,
+    NgxMetroModule,
     ...
   ],
   providers: [],

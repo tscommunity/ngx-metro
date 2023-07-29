@@ -79,7 +79,7 @@
         \t\t<m4-input prepend="Custom input" [(ngModel)]="model" (ngModelChange)="dialogDataEmitter.emit($event)"></m4-input>',\n
       \tstyleUrls: ['./custom-dialog-content-example.component.less']\n
     })\n
-    export class CustomDialogContentExampleComponent implements OnInit, M4DialogDataEmitter<string>, M4DialogDataInput<string> {\n\n
+    export class CustomDialogContentExampleComponent implements OnInit, MetroDialogDataEmitter<string>, MetroDialogDataInput<string> {\n\n
 
       \tconstructor() { }\n\n
 
@@ -96,7 +96,8 @@
   </div>
 </app-doc-component>
 
-<app-doc-component header="Form prompt" description="You can create a complex form prompt using the M4FormGroup"
+<app-doc-component header="Form prompt"
+                   description="You can create a complex form prompt using the MetroFormGroup"
                    [values]="{ dialogService: dialogService, prompt: promptForm }">
   <![CDATA[
   <button m4-button (click)="prompt()">Prompt</button>
@@ -104,8 +105,8 @@
   <div lang>
     <![CDATA[
     \f:(ts)
-    const formGroup = new M4FormGroup('prompt', {\n
-      \tname: new M4FormControl(FileInputComponent, null, [Validators.required], null, { read: 'text' })\n
+    const formGroup = new MetroFormGroup('prompt', {\n
+      \tname: new MetroFormControl(FileInputComponent, null, [Validators.required], null, { read: 'text' })\n
     }, null, null);\n\n
 
     this.dialogService.formPrompt('Form prompt', formGroup)\n

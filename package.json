@@ -1,18 +1,18 @@
 {
-  "name": "metro4-demo",
+  "name": "ngx-metro-demo",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch-lib": "ng build ng-metro4 --watch",
+    "watch-lib": "ng build ngx-metro --watch",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-schematics": "tsc -p projects/ng-metro4/tsconfig.schematics.json --outDir dist/ng-metro4/schematics && cpx dist/ng-metro4/schematics/src/schematics/** dist/ng-metro4/schematics && cpx projects/ng-metro4/src/schematics/**/{collection.json,schema.json,files/**} dist/ng-metro4/schematics",
-    "build-lib": "npm run build -- ng-metro4 --prod && npm run build-schematics && cpx ./README.md ./dist/ng-metro4",
-    "publish-lib": "npm run build-lib && cd ./dist/ng-metro4 && npm publish",
-    "publish-doc": "ng run metro4-demo:deploy"
+    "build-schematics": "tsc -p projects/ngx-metro/tsconfig.schematics.json --outDir dist/ngx-metro/schematics && cpx dist/ngx-metro/schematics/src/schematics/** dist/ngx-metro/schematics && cpx projects/ngx-metro/src/schematics/**/{collection.json,schema.json,files/**} dist/ngx-metro/schematics",
+    "build-lib": "npm run build -- ngx-metro --prod && npm run build-schematics && cpx ./README.md ./dist/ngx-metro",
+    "publish-lib": "npm run build-lib && cd ./dist/ngx-metro && npm publish",
+    "publish-doc": "ng run ngx-metro-demo:deploy"
   },
   "private": true,
   "dependencies": {

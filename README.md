@@ -1,39 +1,39 @@
-# ng-metro4
+# ngx-metro
 
 Angular UI components in modern ui style.
 
-[Documentation](https://morrisjdev.github.io/ng-metro4/#/)
+[Documentation](https://tscommunity.github.io/ngx-metro/#/)
 
-![Screenshot](https://raw.githubusercontent.com/morrisjdev/ng-metro4/master/projects/ng-metro4/ng-metro4%20screenshot.PNG)
+![Screenshot](https://raw.githubusercontent.com/tscommunity/ngx-metro/master/projects/ngx-metro/ngx-metro%20screenshot.PNG)
 
 See metro4 for more details:
 [Metro4](https://metroui.org.ua/)
 
-ng-metro4 on npm: 
-[ng-metro4](https://www.npmjs.com/package/ng-metro4)
+ngx-metro on npm: 
+[ngx-metro](https://www.npmjs.com/package/ngx-metro)
 
 ## Installation
 
 ### Install using Angular CLI:
 
 ````
-ng add ng-metro4
+ng add ngx-metro
 ````
 
 ### Import module:
 
-Add NgMetro4Module to your imports:
+Add NgxMetroModule to your imports:
 
 
 ````
-import { NgMetro4Module } from 'ng-metro4';
+import { NgxMetroModule } from 'ngx-metro';
 ...
 
 imports: [
   BrowserModule,
   FormsModule,
   ReactiveFormsModule,
-  NgMetro4Module,
+  NgxMetroModule,
   ...
 ]
 ````
@@ -41,14 +41,18 @@ imports: [
 ### Generate layout
 
 ````
-ng g ng-metro4:layout
+ng g ngx-metro:layout
 ````
 
 
 ## Usage
 
-Check out the [Documentation](https://morrisjdev.github.io/ng-metro4/#/)
+Check out the [Documentation](https://tscommunity.github.io/ngx-metro/#/)
 
 ## Author
 
-[Morris Janatzek](http://morrisj.net) ([morrisjdev](https://github.com/morrisjdev))
+[tscommunity](https://github.com/tscommunity)
+
+## Compilation
+
+If compilation encounters error `Error: error:0308010C:digital envelope routines::unsupported`, check out the solution [Enable legacy OpenSSL provider](https://stackoverflow.com/a/69699772/1299702)

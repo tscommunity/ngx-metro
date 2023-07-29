@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import 'linq4js';
-import {Lists} from 'ng-metro4';
+import { Lists } from 'ngx-metro';
 
 @Component({
   selector: 'app-icon',

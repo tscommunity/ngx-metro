@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Validators} from '@angular/forms';
-import {InputComponent, M4FormControl} from 'ng-metro4';
+import { InputComponent, MetroFormControl } from 'ngx-metro';
 
 @Component({
   selector: 'app-dynamic-form-control',
@@ -8,19 +8,19 @@ import {InputComponent, M4FormControl} from 'ng-metro4';
   styleUrls: ['./dynamic-form-control.component.less']
 })
 export class DynamicFormControlComponent implements OnInit {
-  public formControl: M4FormControl<InputComponent>;
-  public formControlInital: M4FormControl<InputComponent>;
-  public formControlValidators: M4FormControl<InputComponent>;
-  public formControlOptions: M4FormControl<InputComponent>;
-  public formControlStyle: M4FormControl<InputComponent>;
+  public formControl: MetroFormControl<InputComponent>;
+  public formControlInital: MetroFormControl<InputComponent>;
+  public formControlValidators: MetroFormControl<InputComponent>;
+  public formControlOptions: MetroFormControl<InputComponent>;
+  public formControlStyle: MetroFormControl<InputComponent>;
 
   constructor() {
-    this.formControl = new M4FormControl(InputComponent);
-    this.formControlInital = new M4FormControl(InputComponent, 'This is the value');
-    this.formControlValidators = new M4FormControl(InputComponent, null, [ Validators.required ], [ /* Async validators */ ]);
-    this.formControlOptions = new M4FormControl(InputComponent, null, null, null,
+    this.formControl = new MetroFormControl(InputComponent);
+    this.formControlInital = new MetroFormControl(InputComponent, 'This is the value');
+    this.formControlValidators = new MetroFormControl(InputComponent, null, [ Validators.required ], [ /* Async validators */ ]);
+    this.formControlOptions = new MetroFormControl(InputComponent, null, null, null,
       { prepend: 'Prepend', append: 'Append' });
-    this.formControlStyle = new M4FormControl(
+    this.formControlStyle = new MetroFormControl(
       InputComponent, null, [ Validators.required ], null, null,
       { createError: (error: string) => 'Something missing?' });
   }

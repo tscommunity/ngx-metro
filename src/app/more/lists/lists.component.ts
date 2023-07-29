@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Lists} from 'ng-metro4';
+import { Lists } from 'ngx-metro';
 
 @Component({
   selector: 'app-lists',

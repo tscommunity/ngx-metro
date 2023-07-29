@@ -1,6 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import * as metro4 from 'ng-metro4';
-import {DialogService} from 'ng-metro4';
+import * as metro4 from 'ngx-metro';
+import { DialogService } from 'ngx-metro';
 
 @Component({
   selector: 'app-dialog',

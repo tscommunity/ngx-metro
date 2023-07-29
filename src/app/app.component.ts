@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router} from '@angular/router';
 import {debounceTime, filter} from 'rxjs/operators';
-import {ActivityService} from 'ng-metro4';
+import { ActivityService } from 'ngx-metro';
 
 @Component({
   selector: 'app-root',

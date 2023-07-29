@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {DialogService, M4FormGroup, M4FormControl, FileInputComponent} from 'ng-metro4';
+import { DialogService, MetroFormGroup, MetroFormControl, FileInputComponent } from 'ngx-metro';
 import {last, takeUntil} from 'rxjs/operators';
 import {Subscription, timer} from 'rxjs';
 import {Validators} from '@angular/forms';
@@ -51,8 +51,8 @@ export class DialogServiceComponent implements OnInit, OnDestroy {
   }
 
   promptForm() {
-    const formGroup = new M4FormGroup('prompt', {
-      name: new M4FormControl(FileInputComponent, null, [Validators.required], null, { read: 'text' })
+    const formGroup = new MetroFormGroup('prompt', {
+      name: new MetroFormControl(FileInputComponent, null, [Validators.required], null, { read: 'text' })
     }, null, null);
 
     this.dialogService.formPrompt('Form prompt', formGroup)

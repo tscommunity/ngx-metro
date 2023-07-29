@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "ngx-metro/ng-add",
+  "title": "Add ngx-metro to the project",
+  "description": "NOTE: Does not work in the --dry-run mode",
+  "type": "object",
+  "properties": {
+    "skipInstall": {
+      "type": "boolean",
+      "description": "Skip installing after adding dependencies",
+      "default": false
+    },
+    "project": {
+      "type": "string",
+      "description": "Specify project for install"
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

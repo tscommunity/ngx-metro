@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {DraggableDirective} from 'ng-metro4';
+import { DraggableDirective } from 'ngx-metro';
 
 @Component({
   selector: 'app-draggable',

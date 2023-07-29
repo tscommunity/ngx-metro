@@ -1,5 +1,5 @@
 import {Component, EventEmitter, OnDestroy, OnInit} from '@angular/core';
-import {DialogService, M4DialogDataEmitter, M4DialogDataInput} from 'ng-metro4';
+import { DialogService, MetroDialogDataEmitter, MetroDialogDataInput } from 'ngx-metro';
 import {last} from 'rxjs/operators';
 import {Subscription} from 'rxjs';
 
@@ -8,7 +8,7 @@ import {Subscription} from 'rxjs';
   templateUrl: './custom-dialog-content-example.component.html',
   styleUrls: ['./custom-dialog-content-example.component.less']
 })
-export class CustomDialogContentExampleComponent implements OnInit, M4DialogDataEmitter<string>, M4DialogDataInput<string>, OnDestroy {
+export class CustomDialogContentExampleComponent implements OnInit, MetroDialogDataEmitter<string>, MetroDialogDataInput<string>, OnDestroy {
   private subscriptions: Subscription[] = [];
 
   constructor(private dialogService: DialogService) { }

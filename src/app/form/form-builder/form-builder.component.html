@@ -1,7 +1,8 @@
 <h1>Form builder</h1>
 
 <div class="remark info">
-  The <code>m4-form-builder</code> takes a collection of <code>M4FormControl</code>'s and creates a complete form of it.
+  The <code>m4-form-builder</code> takes a collection of <code>MetroFormControl</code>'s and creates a complete form of
+  it.
   Check out the <a routerLink="/form/dynamic_form_control"><code>m4-dynamic-form-control</code></a> for more information on how to define the controls.
 </div>
 
@@ -16,11 +17,11 @@
   <div lang>
     <![CDATA[
     \f:(ts)
-    formGroup: M4FormGroup;\n\n
+    formGroup: MetroFormGroup;\n\n
 
     constructor() {\n
-      \tthis.formGroup = new M4FormGroup('form_name', {\n
-        \t\tname: new M4FormControl(InputComponent)\n
+      \tthis.formGroup = new MetroFormGroup('form_name', {\n
+        \t\tname: new MetroFormControl(InputComponent)\n
       \t});\n
     }
     ]]>
@@ -38,12 +39,12 @@
   <div lang>
     <![CDATA[
     \f:(ts)
-    formGroup: M4FormGroup;\n\n
+    formGroup: MetroFormGroup;\n\n
 
     constructor() {\n
-      \tthis.formGroup = new M4FormGroup('form_name', {\n
-        \t\tname: new M4FormControl(InputComponent, null, [ Validators.required ]),\n
-        \t\tnameConfirm: new M4FormControl(InputComponent, null, [ Validators.required ]),\n
+      \tthis.formGroup = new MetroFormGroup('form_name', {\n
+        \t\tname: new MetroFormControl(InputComponent, null, [ Validators.required ]),\n
+        \t\tnameConfirm: new MetroFormControl(InputComponent, null, [ Validators.required ]),\n
       \t}, [ CustomGroupValidator.sameValues('name', 'nameConfirm') ]);\n
     }
     ]]>
@@ -61,12 +62,12 @@
   <div lang>
     <![CDATA[
     \f:(ts)
-    formGroup: M4FormGroup;\n\n
+    formGroup: MetroFormGroup;\n\n
 
     constructor() {\n
-      \tthis.formGroup = new M4FormGroup('form_name', {\n
-          \t\t\tname: new M4FormControl(InputComponent, null, [ Validators.required ]),\n
-          \t\t\tnameConfirm: new M4FormControl(InputComponent, null, [ Validators.required ]),\n
+      \tthis.formGroup = new MetroFormGroup('form_name', {\n
+          \t\t\tname: new MetroFormControl(InputComponent, null, [ Validators.required ]),\n
+          \t\t\tnameConfirm: new MetroFormControl(InputComponent, null, [ Validators.required ]),\n
         \t\t}, [ CustomGroupValidator.sameValues('name', 'nameConfirm') ], null,\n
         \t\t{ createError: (error: string) => 'Some errors occured', description: 'Custom form', title: 'Form title' });\n
     }

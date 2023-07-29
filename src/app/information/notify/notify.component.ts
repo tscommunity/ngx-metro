@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {NotifyService} from 'ng-metro4';
+import { NotifyService } from 'ngx-metro';
 
 declare var $: any;
 

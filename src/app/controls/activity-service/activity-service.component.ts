@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {ActivityService, ActivityType} from 'ng-metro4';
+import { ActivityService, ActivityType } from 'ngx-metro';
 
 @Component({
   selector: 'app-activity-service',

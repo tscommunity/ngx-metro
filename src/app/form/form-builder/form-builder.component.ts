@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {InputComponent, M4FormControl, M4FormGroup} from 'ng-metro4';
+import { InputComponent, MetroFormControl, MetroFormGroup } from 'ngx-metro';
 import {Validators} from '@angular/forms';
 import {CustomGroupValidator} from '../form/custom-group-validator';
 
@@ -9,23 +9,23 @@ import {CustomGroupValidator} from '../form/custom-group-validator';
   styleUrls: ['./form-builder.component.less']
 })
 export class FormBuilderComponent implements OnInit {
-  formGroup: M4FormGroup;
-  formGroupValidation: M4FormGroup;
-  formGroupStyle: M4FormGroup;
+  formGroup: MetroFormGroup;
+  formGroupValidation: MetroFormGroup;
+  formGroupStyle: MetroFormGroup;
 
   constructor() {
-    this.formGroup = new M4FormGroup('form_name', {
-      name: new M4FormControl(InputComponent)
+    this.formGroup = new MetroFormGroup('form_name', {
+      name: new MetroFormControl(InputComponent)
     });
 
-    this.formGroupValidation = new M4FormGroup('form_name', {
-      name: new M4FormControl(InputComponent, null, [ Validators.required ]),
-      nameConfirm: new M4FormControl(InputComponent, null, [ Validators.required ]),
+    this.formGroupValidation = new MetroFormGroup('form_name', {
+      name: new MetroFormControl(InputComponent, null, [Validators.required]),
+      nameConfirm: new MetroFormControl(InputComponent, null, [Validators.required]),
     }, [ CustomGroupValidator.sameValues('name', 'nameConfirm') ]);
 
-    this.formGroupStyle = new M4FormGroup('form_name', {
-      name: new M4FormControl(InputComponent, null, [ Validators.required ]),
-      nameConfirm: new M4FormControl(InputComponent, null, [ Validators.required ]),
+    this.formGroupStyle = new MetroFormGroup('form_name', {
+      name: new MetroFormControl(InputComponent, null, [Validators.required]),
+      nameConfirm: new MetroFormControl(InputComponent, null, [Validators.required]),
     }, [ CustomGroupValidator.sameValues('name', 'nameConfirm') ], null,
       { createError: (error: string) => 'Some errors occured', description: 'Custom form', title: 'Form title' });
   }
