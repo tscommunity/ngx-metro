@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {UntypedFormControl, UntypedFormGroup, Validators} from '@angular/forms';
 import { MetroFormGroup } from 'ngx-metro';
 import {CustomGroupValidator} from '../form/custom-group-validator';
 
@@ -10,12 +10,12 @@ import {CustomGroupValidator} from '../form/custom-group-validator';
 })
 export class FormWrapperComponent implements OnInit {
 
-  public formGroup: FormGroup;
+  public formGroup: UntypedFormGroup;
 
   constructor() {
     this.formGroup = new MetroFormGroup('form_wrapper', {
-      password: new FormControl('', [Validators.required]),
-      password_confirm: new FormControl('', [Validators.required]),
+      password: new UntypedFormControl('', [Validators.required]),
+      password_confirm: new UntypedFormControl('', [Validators.required]),
     }, [CustomGroupValidator.sameValues('password', 'password_confirm')]);
   }
 

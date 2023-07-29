@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MetroFormGroup } from 'ngx-metro';
-import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {UntypedFormControl, UntypedFormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-form-control-wrapper',
@@ -8,11 +8,11 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
   styleUrls: ['./form-control-wrapper.component.less']
 })
 export class FormControlWrapperComponent implements OnInit {
-  public formGroup: FormGroup;
+  public formGroup: UntypedFormGroup;
 
   constructor() {
     this.formGroup = new MetroFormGroup('form_control_wrapper', {
-      password: new FormControl('', [Validators.required])
+      password: new UntypedFormControl('', [Validators.required])
     });
   }
 

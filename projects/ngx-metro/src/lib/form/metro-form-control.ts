@@ -1,4 +1,4 @@
-import {AbstractControlOptions, AsyncValidatorFn, FormControl, ValidatorFn} from '@angular/forms';
+import {AbstractControlOptions, AsyncValidatorFn, UntypedFormControl, ValidatorFn} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {ControlBase} from './control-base';
 
@@ -9,7 +9,7 @@ export interface ControlStyle {
   createError?: (error: string) => string|Observable<string>;
 }
 
-export class MetroFormControl<T extends ControlBase<any>> extends FormControl {
+export class MetroFormControl<T extends ControlBase<any>> extends UntypedFormControl {
   public fieldName: string;
   public index: number;
 

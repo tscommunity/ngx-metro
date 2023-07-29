@@ -1,8 +1,8 @@
-import {FormGroup, ValidatorFn} from '@angular/forms';
+import {UntypedFormGroup, ValidatorFn} from '@angular/forms';
 
 export class CustomGroupValidator {
   static sameValues(...fieldKeys: string[]): ValidatorFn {
-    return (formGroup: FormGroup): { [key: string]: any } | null => {
+    return (formGroup: UntypedFormGroup): { [key: string]: any } | null => {
       const formValue = formGroup.value;
 
       const firstValue = formValue[fieldKeys[0]];
