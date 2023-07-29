@@ -1,10 +1,10 @@
 {
   "name": "ngx-metro",
   "description": "Angular components for Metro4 UI library in modern ui style.",
-  "version": "1.0.9",
+  "version": "1.10.0",
   "peerDependencies": {
-    "@angular/common": "~9.0.1",
-    "@angular/core": "~9.0.1",
+    "@angular/common": "~10.2.5",
+    "@angular/core": "~10.2.5",
     "moment": "^2.24.0",
     "metro4": "4.3.7",
     "rxjs": "~6.5.4"
@@ -24,6 +24,9 @@
     "url": "https://github.com/tscommunity/ngx-metro/issues"
   },
   "homepage": "https://github.com/tscommunity/ngx-metro",
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/tscommunity/ngx-metro.git"
